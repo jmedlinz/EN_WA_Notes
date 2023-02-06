@@ -1,4 +1,3 @@
-# from datetime import date, datetime #, timedelta, datetime
 from calendar import monthrange
 import note
 

@@ -1,19 +1,19 @@
-from datetime import date, datetime
-from pprint import pprint
+from datetime import datetime
 import os
-# from calendar import monthrange
 import document
 
 def main():
 
     FOLDER = r'c:\temp'
 
+    print('This script will generate a month''s worth of Work Activity notes \ninto a .enex file that can be imported into Evernote.\n')
+
     # Ask the user which month and user they'd like to use.
     current_year = datetime.now().year
     current_month = datetime.now().month
     current_month_string = datetime.now().strftime("%B")
-    year = int(input(f"What year? (ENTER for {current_year})") or current_year)
-    month = int(input(f"What month? (ENTER for {current_month_string})") or current_month)
+    year = int(input(f"What year? (Format: ####.  ENTER for {current_year}) ") or current_year)
+    month = int(input(f"What month? (Format: ##.  ENTER for {current_month_string}) ") or current_month)
 
     # Creating a document of WA notes for the chosen month and year.
     doc = document.Document(year, month)
@@ -26,7 +26,7 @@ def main():
     f.write(doc.content())
     f.close()
 
-    print(f'The file was saved in the file "{fullpath}".')
+    print(f'\nThe file was saved in the file "{fullpath}".')
 
 
 main()
