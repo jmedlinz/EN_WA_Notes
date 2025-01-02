@@ -1,12 +1,17 @@
-from datetime import datetime
 import os
+from datetime import datetime
+
 import document
+
 
 def main():
 
-    FOLDER = r'c:\temp'
+    FOLDER = r"c:\temp"
 
-    print('This script will generate a month''s worth of Work Activity notes \ninto a .enex file that can be imported into Evernote.\n')
+    print(
+        "This script will generate a month"
+        "s worth of Work Activity notes \ninto a .enex file that can be imported into Evernote.\n"
+    )
 
     # Ask the user which month and user they'd like to use.
     current_year = datetime.now().year
@@ -20,7 +25,7 @@ def main():
 
     # Write the new document to a file
     # WA_notes.YYYYMM.enex
-    filename = f'WA_notes.{year}{str(month).zfill(2)}.enex'
+    filename = f"WA_notes.{year}{str(month).zfill(2)}.enex"
     fullpath = os.path.join(FOLDER, filename)
     f = open(fullpath, "w")
     f.write(doc.content())

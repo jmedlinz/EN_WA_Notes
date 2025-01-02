@@ -1,5 +1,5 @@
-from datetime import date
 import calendar
+from datetime import date
 
 
 class Note:
@@ -20,19 +20,19 @@ class Note:
 
         # Assemble the note.
         # The data and the content are unique for each note.
-        self.__content  = '  <note>\n'
-        self.__content += '    <title>' + self.__date.strftime('%B %#d, %Y - %A') + '</title>\n'
-        self.__content += '    <created>' + self.__date.strftime('%Y%m%d') + 'T060100Z</created>\n'
-        self.__content += '    <updated>' + self.__date.strftime('%Y%m%d') + 'T060100Z</updated>\n'
-        self.__content += '    <tag>Today</tag>\n'
-        self.__content += '    <note-attributes>\n'
-        self.__content += '      <author>James Medlin</author>\n'
-        self.__content += '    </note-attributes>\n'
-        self.__content += '    <content>\n'
+        self.__content = "  <note>\n"
+        self.__content += "    <title>" + self.__date.strftime("%B %#d, %Y - %A") + "</title>\n"
+        self.__content += "    <created>" + self.__date.strftime("%Y%m%d") + "T060100Z</created>\n"
+        self.__content += "    <updated>" + self.__date.strftime("%Y%m%d") + "T060100Z</updated>\n"
+        self.__content += "    <tag>Today</tag>\n"
+        self.__content += "    <note-attributes>\n"
+        self.__content += "      <author>James Medlin</author>\n"
+        self.__content += "    </note-attributes>\n"
+        self.__content += "    <content>\n"
         self.__content += '      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>\n'
-        self.__content += content + '\n'
-        self.__content += '    </content>\n'
-        self.__content += '  </note>\n'
+        self.__content += content + "\n"
+        self.__content += "    </content>\n"
+        self.__content += "  </note>\n"
 
     def content(self):
         return self.__content
