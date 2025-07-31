@@ -27,7 +27,7 @@ def main():
     # WA_notes.YYYYMM.enex
     filename = f"WA_notes.{year}{str(month).zfill(2)}.enex"
     fullpath = os.path.join(FOLDER, filename)
-    f = open(fullpath, "w")
+    f = open(fullpath, "w", encoding="utf-8")
     f.write(doc.content())
     f.close()
 
