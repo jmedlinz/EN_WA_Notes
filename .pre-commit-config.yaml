@@ -3,7 +3,7 @@
 repos:
 
 -   repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v5.0.0
+    rev: v6.0.0
     hooks:
     -   id: trailing-whitespace
     -   id: end-of-file-fixer
@@ -25,7 +25,7 @@ repos:
 
 # Config for isort is in the pyproject.toml file.
 -   repo: https://github.com/PyCQA/isort
-    rev: 5.13.2
+    rev: 6.0.1
     hooks:
     -   id: isort
 
@@ -45,18 +45,18 @@ repos:
 
 # Config for flake8 is in the .flake8 file.
 -   repo: https://github.com/pycqa/flake8
-    rev: 7.1.1
+    rev: 7.3.0
     hooks:
     -   id: flake8
 
 -   repo: https://github.com/asottile/pyupgrade
-    rev: v3.19.1
+    rev: v3.20.0
     hooks:
     -   id: pyupgrade
 
 # Config for black is in the pyproject.toml file.
 -   repo: https://github.com/psf/black
-    rev: 24.10.0
+    rev: 25.9.0
     hooks:
     -   id: black
         language_version: python3
