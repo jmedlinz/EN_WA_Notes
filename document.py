@@ -9,7 +9,7 @@ class Document:
 
         HEADER = '<?xml version="1.0" encoding="UTF-8"?>\n'
         HEADER += '<!DOCTYPE en-export SYSTEM "http://xml.evernote.com/pub/evernote-export4.dtd">\n'
-        HEADER += '<en-export export-date="20250731T220000Z" application="Evernote" version="10.147.1">\n'
+        HEADER += '<en-export export-date="20260303T135110Z" application="Evernote" version="11.4.4">\n'
 
         FOOTER = "</en-export>\n"
 
