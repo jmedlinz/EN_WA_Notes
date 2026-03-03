@@ -18,5 +18,10 @@
         "titleBar.inactiveBackground": "#368d5399",
         "titleBar.inactiveForeground": "#e7e7e799"
     },
-    "peacock.color": "#368d53"
+    "peacock.color": "#368d53",
+    "cSpell.words": [
+        "Consolas",
+        "enex",
+        "Evernote"
+    ]
 }
